@@ -16,7 +16,7 @@ function Login() {
         console.log("Submitting:", { email, password });
       
         axios
-          .post("http://localhost:3001/login", { email, password })
+          .post("https://user-login-deploy-server.vercel.app/login", { email, password })
           .then((res) => {
             console.log("Response:", res);
             console.log("Login Status:", res.data);
