@@ -13,7 +13,7 @@ const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Sending data:", { name, email, password });
    
-    axios.post('http://localhost:3001/users',{ name, email, password })
+    axios.post('https://user-login-deploy-server.vercel.app/users',{ name, email, password })
     .then(res => console.log("Response:", res),
 navigate("/login"))
   .catch(err => console.error("Error:", err));
